@@ -8,7 +8,7 @@ import chatIcon from "../../chatIcon2.png";
 import "./Chat.css";
 
 const Chat = (props) => {
-  const [message, setMessage] = useState({});
+  const [message, setMessage] = useState({text:""});
   const [messageList, setMessageList] = useState([
     {
       username: props.username,

@@ -15,6 +15,7 @@ const App = () => {
   const joinRoom = () => {
     socket.emit("join_room", { username: username, roomId: roomId });
     setRoomJoined(true);
+    document.title =  `Talkr - Hi, ${username}.`
   };
 
   useEffect(() => {
