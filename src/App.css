@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+  margin-top: calc(20vh - 49px);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181D31;
+}
+
+.login-window {
+  width: 25vw;
+  margin-top: 200px;
+}
+
+.login-header {
+  border: 5px solid #6C00FF;
+  border-radius: 10px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-box input {
+  outline: none;
+  margin-bottom: 20px;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  width: inherit;
+}
+
+.input-box input:focus {
+  border: 3px solid #6C00FF;
+  margin-bottom: 17px;
+}
+
+button {
+  outline: none;
+  background-color: #6C00FF;
+  color: #fff;
+  border: none;
+  padding: 20px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.disabled {
+  background-color: #c3c2c49c;
+  cursor: not-allowed;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 980px) {
+  .login-header {
+    font-size: 85%;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .login-header {
+    font-size: 80%;
+  }
+
+  .login-header img {
+    height: 40px
+  }
+
+  .login-window {
+    width: 27vw;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .login-header {
+    font-size: 78%;
+  }
+
+  .login-header img {
+    height: 36px
+  }
+
+  .login-window {
+    width: 28vw;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .login-header {
+    font-size: 75%;
+  }
+
+  .login-header img {
+    height: 35px
+  }
+
+  .login-window {
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .login-header {
+    font-size: 70%;
+  }
+
+  .login-header img {
+    height: 30px
+  }
+
+  .login-window {
+    width: 39vw;
+  }
+
+  .input-box input {
+    padding: 14px 0;
+  }
+
+  button {
+    padding: 15px 0;
+  }
+
+}
+
+@media only screen and (max-width: 455px) {
+  .login-window {
+    width: 53vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  .App {
+    margin-top: calc(20vh - 100px);
+  }
+}
