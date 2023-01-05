@@ -5,7 +5,7 @@ import chatIcon from "./chatIcon2.png";
 import "./App.css";
 import Chat from "./components/Chat/Chat";
 
-const socket = io("https://talkr.vercel.app/");
+const socket = io("https://talkr.onrender.com/");
 
 const App = () => {
   const [username, setUserName] = useState("");
