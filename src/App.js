@@ -5,7 +5,7 @@ import chatIcon from "./chatIcon2.png";
 import "./App.css";
 import Chat from "./components/Chat/Chat";
 
-const socket = io("https://talkr.onrender.com/");
+const socket = io(process.env.REACT_APP_URL);
 
 const App = () => {
   const [username, setUserName] = useState("");
@@ -15,7 +15,7 @@ const App = () => {
   const joinRoom = () => {
     socket.emit("join_room", { username: username, roomId: roomId });
     setRoomJoined(true);
-    document.title =  `Talkr - Hi, ${username}.`
+    document.title = `Talkr - Hi, ${username}.`;
   };
 
   useEffect(() => {
